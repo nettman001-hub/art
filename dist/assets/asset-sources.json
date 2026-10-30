@@ -1,0 +1,9 @@
+{
+  "notice": "All images are original AI-generated illustrative interiors, not photographs of actual Artgongjo installations.",
+  "generator": "built-in image_gen",
+  "assets": [
+    {"file":"hero-interior.png","description":"Modern Korean apartment living room with cream sofa, natural oak and a subtle one-way ceiling cassette","dimensions":"1672x941","label":"AI 공간 연출 이미지"},
+    {"file":"case-residential.png","description":"Warm neutral Korean apartment dining and living area with a one-way ceiling cassette","dimensions":"1536x1024","label":"AI 공간 연출 이미지"},
+    {"file":"case-cafe.png","description":"Minimal Seoul cafe with walnut bar, natural light and a four-way ceiling cassette","dimensions":"1536x1024","label":"AI 공간 연출 이미지"}
+  ]
+}
