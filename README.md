@@ -1,6 +1,6 @@
-# art — 아트공조 데모
+# art — 거니공조 데모
 
-시스템에어컨 업체 아트공조의 반응형 웹사이트 데모입니다. HTML, CSS, JavaScript로 작성되어 별도 설치나 빌드 없이 실행할 수 있습니다.
+시스템에어컨 업체 거니공조의 반응형 웹사이트 데모입니다. HTML, CSS, JavaScript로 작성되어 별도 설치나 빌드 없이 실행할 수 있습니다.
 
 ## 로컬 실행
 
@@ -48,8 +48,8 @@ node quote-check.mjs
 
 정적 호스팅 시 `dist` 폴더를 배포합니다. Vercel 프로젝트는 저장소 루트를 Root Directory로 사용하며 `vercel.json`이 출력 디렉토리와 빌드 생략 설정을 지정합니다.
 
-- Vercel: [아트공조 공개 데모](https://art-one-rho.vercel.app/) — GitHub `main`에 push하면 연결된 프로젝트가 자동으로 배포됩니다.
-- Sites: [기존 아트공조 데모](https://artgongjo-demo-1030.nettman001.chatgpt.site) — 접근 범위는 Sites 설정을 따르며, GitHub push와 별도로 배포해야 합니다.
+- Vercel: [거니공조 공개 데모](https://art-one-rho.vercel.app/) — GitHub `main`에 push하면 연결된 프로젝트가 자동으로 배포됩니다.
+- Sites: [기존 거니공조 데모](https://artgongjo-demo-1030.nettman001.chatgpt.site) — 접근 범위는 Sites 설정을 따르며, GitHub push와 별도로 배포해야 합니다.
 
 ```sh
 git pull --ff-only origin main
