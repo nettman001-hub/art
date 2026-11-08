@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102a36">
+  <meta name="description" content="거니공조 홈페이지 및 홍보·영업 자동화 제작 제안. 시공사진 수집, 채널별 홍보, 견적 및 문의 관리 과정을 체험하세요.">
+  <title>제안내용 · 거니공조</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="proposal.css">
+  <script src="quote.js" defer></script>
+  <script src="proposal.js" defer></script>
+</head>
+<body class="proposal">
+  <a class="p-skip" href="#main">본문 바로가기</a>
+  <header class="p-header">
+    <div class="p-wrap">
+      <a class="p-brand" href="./" aria-label="거니공조 홈페이지">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M34 14a17 17 0 1 0 3 22V26H25M32 20h10M35 26h9M33 32h9"/></svg>
+        <span>거니공조<small>GEONI GONGJO</small></span>
+      </a>
+      <a class="p-back" href="./"><span aria-hidden="true">←</span> 홈페이지</a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="p-hero p-wrap" aria-labelledby="hero-title">
+      <div class="p-hero-copy">
+        <p class="p-eyebrow">거니공조를 위한 제작 제안</p>
+        <h1 id="hero-title">시공사진에서<br><em>다음 상담까지.</em></h1>
+        <p class="p-lead">작업팀이 보낸 사진으로 시공사례를 알리고, 그 사례를 본 고객의 견적 문의를 담당자에게 연결하는 홈페이지와 운영 솔루션을 제안합니다.</p>
+        <div class="p-hero-actions">
+          <a class="p-button p-primary" href="#demo">사진 6장으로 시연하기 <span aria-hidden="true">→</span></a>
+          <a class="p-button p-secondary" href="#solutions">제안 범위 보기</a>
+        </div>
+      </div>
+      <figure class="p-hero-image">
+        <img src="assets/proposal/06.webp" alt="천장형 에어컨 설치를 마친 아파트 거실 연출" fetchpriority="high">
+        <figcaption>서울 34평 아파트 <span>시공 완료 · AI 시연 이미지</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="p-section p-wrap" id="demo" aria-labelledby="demo-title">
+      <div class="p-section-heading">
+        <div><p class="p-eyebrow">업무 흐름 시연</p><h2 id="demo-title">한 현장의 기록을 따라가 보세요.</h2></div>
+        <p>가상 현장과 예시 고객으로 체험합니다. 게시와 발송은 이 화면에서 시뮬레이션합니다.</p>
+      </div>
+      <div class="p-studio">
+        <div class="p-studio-head"><strong>거니공조 현장 관리</strong><button class="p-reset" id="restart" type="button">처음부터 보기 <span aria-hidden="true">↺</span></button></div>
+        <nav class="p-steps" aria-label="시연 단계">
+          <button type="button" data-step="0" aria-current="step"><span>01</span> 사진 수신</button>
+          <button type="button" data-step="1"><span>02</span> 현장 앨범</button>
+          <button type="button" data-step="2"><span>03</span> 홍보 발행</button>
+          <button type="button" data-step="3"><span>04</span> 문의·견적</button>
+        </nav>
+        <div class="p-stage" id="stage" aria-label="선택한 단계의 시연 화면"></div>
+        <div class="p-controls"><button class="p-button p-secondary" type="button" id="previous">이전 단계</button><button class="p-button p-primary" type="button" id="next">현장 앨범 만들기 →</button></div>
+      </div>
+      <noscript>업무 흐름 시연을 사용하려면 브라우저에서 자바스크립트를 활성화해 주세요.</noscript>
+      <p class="p-sr" id="notice" role="status"></p>
+    </section>
+
+    <section class="p-section p-wrap" id="solutions" aria-labelledby="solutions-title">
+      <div class="p-section-heading">
+        <div><p class="p-eyebrow">제작 범위</p><h2 id="solutions-title">거니공조에 제안하는 네 가지 업무</h2></div>
+        <p>거니공조가 필요한 계정과 운영 권한을 보유한 조건으로 설계합니다.</p>
+      </div>
+      <div class="p-solutions">
+        <article class="p-solution"><p class="p-eyebrow">홍보</p><h3>콘텐츠 제작과 정기 게시</h3><p>현장 사진으로 쇼츠와 인스타그램 게시물을 제작합니다. 네이버 블로그는 브라우저 등록을 자동화해 글 입력, 사진 첨부, 카테고리 선택과 예약 발행을 처리하고 게시 주소를 현장 기록에 남깁니다.</p><a data-jump="2" href="#demo">채널별 시안 보기 <span aria-hidden="true">↗</span></a></article>
+        <article class="p-solution"><p class="p-eyebrow">영업</p><h3>숨고·크몽 견적과 응대</h3><p>지역과 설치 조건을 읽어 예상 금액, 기본 구성, 추가 질문을 작성합니다. 숨고는 발송 예산과 조건을 적용하고, 크몽은 반복 질문과 개별 견적 메시지를 처리합니다.</p><a data-jump="3" data-source="숨고" href="#demo">플랫폼 견적 시연 <span aria-hidden="true">↗</span></a></article>
+        <article class="p-solution"><p class="p-eyebrow">고객 관리</p><h3>홈페이지 문의와 후속 연락</h3><p>고객이 선택한 구성과 희망 일정을 상담 카드에 담습니다. 접수 안내, 담당자 배정, 다음 연락일을 연결해 미응답 건과 방문 일정을 한눈에 확인합니다.</p><a data-jump="3" data-source="홈페이지" href="#demo">상담 카드 보기 <span aria-hidden="true">↗</span></a></article>
+        <article class="p-solution"><p class="p-eyebrow">현장 기록</p><h3>시공사진 수집·분류·활용</h3><p>작업팀이 카카오톡에서 현장을 고르고 사진을 보내면 공정별 앨범으로 정리합니다. 원본은 상담과 A/S를 위해 보관하고, 승인된 편집본은 시공사례와 홍보에 활용합니다.</p><a data-jump="1" href="#demo">사진 앨범 열기 <span aria-hidden="true">↗</span></a></article>
+      </div>
+    </section>
+
+    <section class="p-section p-wrap" id="priorities" aria-labelledby="priority-title">
+      <div class="p-section-heading"><div><p class="p-eyebrow">첫 도입 협의</p><h2 id="priority-title">먼저 줄이고 싶은 업무를 선택해 주세요.</h2></div></div>
+      <div class="p-choice-grid" id="choices" role="group" aria-label="첫 도입 우선순위">
+        <button type="button" data-choice="홍보물 제작" aria-pressed="false">홍보물 제작</button>
+        <button type="button" data-choice="반복 견적" aria-pressed="false">반복 견적</button>
+        <button type="button" data-choice="후속 연락" aria-pressed="false">후속 연락</button>
+        <button type="button" data-choice="사진 정리" aria-pressed="false">사진 정리</button>
+      </div>
+      <div id="priority-result" class="p-priority-result" aria-live="polite"></div>
+    </section>
+  </main>
+  <footer class="p-footer"><div class="p-wrap"><strong>거니공조 제작 제안</strong><a href="./">홈페이지로 돌아가기 <span aria-hidden="true">↗</span></a></div></footer>
+  <dialog class="p-lightbox" id="photo-dialog"><button class="p-button p-secondary" type="button" id="close-photo">사진 닫기 ×</button><figure><img id="large-photo" alt=""><figcaption id="photo-caption"></figcaption></figure></dialog>
+</body>
+</html>
