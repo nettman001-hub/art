@@ -297,3 +297,79 @@ img { display: block; max-width: 100%; }
 .p-followups ul { list-style: none; padding: 0; }
 .p-followups li + li { margin-top: 5px; }
 .p-followups .p-button { width: 100%; justify-content: flex-start; padding: 7px 12px; min-height: 38px; text-align: left; font-size: 13px; }
+
+.p-header-links { display: flex; align-items: center; gap: clamp(13px, 2.3vw, 30px); }
+.p-header-links > a + a { border-inline-start: 1px solid var(--line); padding-inline-start: clamp(13px, 2.3vw, 30px); }
+.p-solution p + p { margin-top: 7px; }
+.p-ai-result {
+  margin-block: 14px; padding: 14px 16px; border-inline-start: 3px solid var(--teal);
+  border-radius: 0 10px 10px 0; background: #e6f1e9; color: var(--ink);
+}
+.p-ai-result h4 { font-size: 15px; color: #104e43; }
+.p-ai-result p { margin-block: 4px 0; }
+.p-ai-result button { margin-top: 8px; }
+.p-request-inputs { display: flex; flex-wrap: wrap; align-items: end; gap: 10px 16px; margin-block: 12px; }
+.p-request-inputs .p-units { flex: 1 1 10em; }
+.p-request-inputs select { min-width: 0; }
+
+/* Campaign editor */
+.c-section { min-width: 0; }
+.c-section + .c-section { margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--line); }
+.c-section > h4, .c-review > h4 { margin-bottom: 6px; }
+.c-section + .p-button, .c-review > .p-button { margin-top: 9px; }
+.c-topics {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-block: 12px;
+}
+.c-topic {
+  position: relative; display: grid; align-content: start; gap: 5px; min-width: 0; padding: 13px 32px 13px 12px;
+  border: 1px solid #b9ccbf; border-radius: 10px; color: var(--ink); background: #fff; text-align: start;
+}
+.c-topic strong { font-size: 15px; font-weight: 700; line-height: 1.44; }
+.c-topic small { font-size: 12px; line-height: 1.48; color: var(--muted); }
+.c-topic::after {
+  content: ""; position: absolute; inset: 13px 11px auto auto; width: 16px; height: 16px; border-radius: 4px;
+  border: 1px solid #9bb5a7; background: white;
+}
+.c-topic[aria-pressed="true"] { border-color: var(--teal); background: #e2f1e7; }
+.c-topic[aria-pressed="true"]::after {
+  content: "✓"; display: grid; place-items: center; font-size: 12px; font-weight: 800; line-height: 1;
+  color: white; border-color: var(--deep); background: var(--deep);
+}
+.c-topic:hover:not(:disabled) { border-color: var(--teal); }
+.c-actions, .c-clock { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-block: 12px; }
+.c-clock {
+  justify-content: space-between; gap: 10px; padding: 12px 14px; border: 1px solid var(--line);
+  background: #fff; border-radius: 10px; font-size: 14px;
+}
+.c-clock .p-button, .c-actions .p-button { min-height: 40px; }
+.c-schedule { margin-block: 12px; width: 100%; }
+.c-schedule th, .c-schedule td { vertical-align: middle; overflow-wrap: anywhere; }
+.c-schedule tr[aria-current="true"] { background: #dfefe6; }
+.c-schedule td button {
+  min-height: 40px; font-weight: 650; color: var(--deep); text-align: start;
+  text-decoration: underline; text-underline-offset: 3px; text-decoration-color: #90b7a6;
+}
+.c-schedule td button:disabled { color: var(--muted); opacity: 1; text-decoration: none; }
+.c-review { min-width: 0; margin-top: 16px; }
+.c-topic-label { margin-block: 5px; color: var(--teal); font-size: 13px; font-weight: 680; }
+.c-tiktok {
+  display: grid; gap: 9px; justify-items: center; text-align: center;
+  padding: 16px; background: #142e30; color: white; border-radius: 11px;
+}
+.c-tiktok > small { color: #b9e5d7; }
+.c-tiktok video { display: block; width: min(100%, 229px); aspect-ratio: 9 / 16; object-fit: contain; background: #091b1c; border-radius: 8px; }
+.c-tiktok figcaption { font-size: 13px; color: #d3e7e0; }
+@media (min-width: 721px) {
+  .p-solutions { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .p-stage-grid:has(.c-topics, .c-section, .c-review) { grid-template-columns: minmax(170px, .55fr) minmax(0, 1.45fr); }
+}
+@media (max-width: 460px) {
+  .p-header-links > a { font-size: 12px; }
+  .p-hero h1 { font-size: clamp(34px, 8.4vw, 40px); }
+  .c-topics { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+  .c-topic { padding-block: 10px; gap: 2px; }
+  .c-topic strong { font-size: 14px; }
+  .c-clock { padding: 10px; }
+  .c-clock .p-button { padding-inline: 10px; font-size: 13px; }
+  .c-schedule :is(th, td) { padding: 8px 3px; font-size: 12px; }
+}
